@@ -4,15 +4,25 @@
 }
 
 body{
+  height: 100vh;
+  background-color: black;
+  background-image: url('/assets/img/planoFundo.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
 
+main{
+  color: #fff;
+}
+
 form{
-  background-color: slategrey;
-  width: 500px;
+  background-color: rgba(128, 128, 128, 0.566);
 }
 
 label{
@@ -20,11 +30,15 @@ label{
   margin: 5px;
 }
 
+select{
+  margin-top: 10px;
+}
+
 option{
   width: 50px;
 }
 
-fieldset > div{
+div{
   margin: 10px;
 }
 
@@ -44,4 +58,23 @@ button{
   width: 37%;
   height: 30px;
   font-size: 16px;
+}
+
+
+@media screen and (min-width: 480px){
+  form{
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 720px){
+  form{
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  form{
+    width: 500px;
+  }
 }
