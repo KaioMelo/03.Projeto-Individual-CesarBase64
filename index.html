@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Mensagem Oculta</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Mensagens Ocultas</h1>
+    <form>
+      <fieldset>
+        <select name="codigos" id="codigos">
+          <option value="cesar">Cifra de César</option>
+          <option value="base64">Base 64</option>
+        </select>
+        <div class="incrementoCesar">
+          <input type="number" id="chave" value="1" max="25">
+        </div>
+        <div class="radioCod">
+          <input type="radio" name="cod" class="radio" id="cod" />
+          <label for="codificar">Codificar</label>
+          <input type="radio" name="cod" class="radio" id="decod" />
+          <label for="decodificar">Decodificar</label>
+        </div>
+        <div>
+          <label for="mensagem" class="titulo">Insira a mensagem:</label>
+          <textarea id="mensagem" cols="20" rows=""></textarea>
+        </div>
+        <div>
+          <label for="resultado" class="titulo">Resultado:</label>
+          <textarea name="Resultado" id="resultado" rows="3" disabled></textarea>
+        </div>
+        <button id="botaoEnviar">Enviar</button>
+      </fieldset>
+    </form>
+    <footer>
+      <p>Kaio Melo dos Santos</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
