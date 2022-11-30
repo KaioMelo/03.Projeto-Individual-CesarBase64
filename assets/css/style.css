@@ -34,10 +34,6 @@ select{
   margin-top: 10px;
 }
 
-option{
-  width: 50px;
-}
-
 div{
   margin: 10px;
 }
@@ -61,13 +57,17 @@ footer i {
   margin: 5px;
 }
 
+footer a{
+  color: #fff;
+  text-decoration: none;
+}
+
 .titulo{
   display: flex;
   justify-content: center;
 }
 
 #chave{
-  width: 37%;
   height: 30px;
   font-size: 16px;
 }
