@@ -6,7 +6,7 @@
 body{
   height: 100vh;
   background-color: black;
-  background-image: url('./assets/img/planoFundo.jpg');
+  background-image: url('../img/planoFundo.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
