@@ -75,3 +75,17 @@ let selecaoCod = document.addEventListener("click", function () {
     incremento.style.display = "none";
   }
 });
+
+
+
+radio[0].addEventListener("click", function () {
+  if (radio[0].checked) {
+    botao.innerHTML = `<span>Criptografar</span>`;
+  }
+});
+
+radio[1].addEventListener("click", function () {
+  if (radio[1].checked) {
+    botao.innerHTML = `<span>Descriptografar</span>`;
+  }
+});
