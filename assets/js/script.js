@@ -4,6 +4,7 @@ let msg = document.querySelector("#mensagem");
 let ch = document.querySelector("#chave");
 let result = document.querySelector("#resultado");
 
+// Configuração da Base64 e cifra de cesar
 botao.addEventListener("click", function (event) {
   event.preventDefault();
   var codigo = document.querySelector("#codigos").value;
@@ -24,6 +25,7 @@ botao.addEventListener("click", function (event) {
   }
 });
 
+//codificador da cifra de cesar
 function codificarCesar(msg, ch) {
   return msg
     .map((str) => {
@@ -39,6 +41,7 @@ function codificarCesar(msg, ch) {
     .join("");
 }
 
+//decodificador da cifra de cesar
 function decodificarCesar(msg, ch) {
   return msg
     .map((str) => {
@@ -62,6 +65,7 @@ function decodificarCesar(msg, ch) {
     .join("");
 }
 
+// display incremento de cifra de cesar
 let incremento = document.querySelector(".incrementoCesar");
 let selecaoCod = document.addEventListener("click", function () {
   let codigo = document.querySelector("#codigos").value;
@@ -69,17 +73,5 @@ let selecaoCod = document.addEventListener("click", function () {
     incremento.style.display = "block";
   } else {
     incremento.style.display = "none";
-  }
-});
-
-radio[0].addEventListener("click", function () {
-  if (radio[0].checked) {
-    botao.innerHTML = `<span>Codificar</span>`;
-  }
-});
-
-radio[1].addEventListener("click", function () {
-  if (radio[1].checked) {
-    botao.innerHTML = `<span>Decodificar</span>`;
   }
 });
