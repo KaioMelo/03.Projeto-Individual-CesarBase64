@@ -7,20 +7,20 @@ let result = document.querySelector("#resultado");
 // Configuração da Base64 e cifra de cesar
 botao.addEventListener("click", function (event) {
   event.preventDefault();
-  var codigo = document.querySelector("#codigos").value;
+  let codigo = document.querySelector("#codigos").value;
   if (codigo == "cesar" && radio[0].checked) {
-    var valorMsg = msg.value.split("");
-    var valorChave = parseInt(ch.value);
+    let valorMsg = msg.value.split("");
+    let valorChave = parseInt(ch.value);
     result.value = codificarCesar(valorMsg, valorChave);
   } else if (codigo == "cesar" && radio[1].checked) {
-    var valorMsg = msg.value.split("");
-    var valorChave = parseInt(ch.value);
+    let valorMsg = msg.value.split("");
+    let valorChave = parseInt(ch.value);
     result.value = decodificarCesar(valorMsg, valorChave);
   } else if (codigo == "base64" && radio[0].checked) {
-    var valorMsg = msg.value;
+    let valorMsg = msg.value;
     result.value = btoa(valorMsg);
   } else {
-    var valorMsg = msg.value;
+    let valorMsg = msg.value;
     result.value = atob(valorMsg);
   }
 });
