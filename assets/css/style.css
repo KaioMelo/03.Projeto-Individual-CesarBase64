@@ -63,6 +63,7 @@ button{
   padding: 5px;
   margin-bottom: 5px;
   background-color: rgb(184, 32, 32);
+  font-family: "Orbitron";
 }
 
 button:hover{
@@ -95,8 +96,9 @@ footer a{
 }
 
 #chave{
+  width: 47%;
   height: 30px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 #resultado{
